@@ -1,0 +1,26 @@
+{
+    "name": "@brrinta/authorizenet-ts",
+    "version": "1.0.1",
+    "description": "Type definition of authorizenet node-sdk",
+    "main": "src/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brrinta/authorizenet-ts.git"
+    },
+    "keywords": [
+        "nodejs",
+        "authorizenet",
+        "typescript"
+    ],
+    "author": "brrinta <brrinta@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/brrinta/authorizenet-ts/issues"
+    },
+    "homepage": "https://github.com/brrinta/authorizenet-ts#readme",
+    "dependencies": {
+        "authorizenet": "^1.0.7"
+    }
+}

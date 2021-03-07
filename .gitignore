@@ -1,0 +1,7 @@
+node_modules
+.npmrc
+*.log
+# IDE
+.vscode
+.idea
+package-lock.json
