@@ -8,7 +8,7 @@
 
 
 export class ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		merchantAuthentication: MerchantAuthenticationType,
 		clientId: string,
 		refId: string
@@ -30,7 +30,7 @@ export class ANetApiRequest {
 }
 
 export class ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		refId: string,
 		messages: MessagesType,
 		sessionToken: string
@@ -51,7 +51,7 @@ export class ANetApiResponse {
 }
 
 export class ARBGetSubscriptionListSorting {
-	constructor(obj: {
+	constructor(obj?: {
 		orderBy: ARBGetSubscriptionListOrderFieldEnum,
 		orderDescending: boolean
 	})
@@ -67,7 +67,7 @@ export class ARBGetSubscriptionListSorting {
 }
 
 export class ARBSubscriptionMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		paymentSchedule: PaymentScheduleType,
 		amount: number,
@@ -113,7 +113,7 @@ export class ARBSubscriptionMaskedType {
 }
 
 export class ARBSubscriptionType {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		paymentSchedule: PaymentScheduleType,
 		amount: number,
@@ -169,7 +169,7 @@ export class ARBSubscriptionType {
 }
 
 export class ArbTransaction {
-	constructor(obj: {
+	constructor(obj?: {
 		transId: string,
 		response: string,
 		submitTimeUTC: Date,
@@ -201,7 +201,7 @@ export class ArbTransaction {
 }
 
 export class AuDetailsType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileID: number,
 		customerPaymentProfileID: number,
 		firstName: string,
@@ -243,7 +243,7 @@ export class AuDetailsType {
 }
 
 export class AuResponseType {
-	constructor(obj: {
+	constructor(obj?: {
 		auReasonCode: string,
 		profileCount: number,
 		reasonDescription: string
@@ -265,7 +265,7 @@ export class AuResponseType {
 }
 
 export class BankAccountMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		accountType: BankAccountTypeEnum,
 		routingNumber: string,
 		accountNumber: string,
@@ -303,7 +303,7 @@ export class BankAccountMaskedType {
 }
 
 export class BankAccountType {
-	constructor(obj: {
+	constructor(obj?: {
 		accountType: BankAccountTypeEnum,
 		routingNumber: string,
 		accountNumber: string,
@@ -345,7 +345,7 @@ export class BankAccountType {
 }
 
 export class BatchDetailsType {
-	constructor(obj: {
+	constructor(obj?: {
 		batchId: string,
 		settlementTimeUTC: Date,
 		settlementTimeLocal: Date,
@@ -391,7 +391,7 @@ export class BatchDetailsType {
 }
 
 export class BatchStatisticType {
-	constructor(obj: {
+	constructor(obj?: {
 		accountType: string,
 		chargeAmount: number,
 		chargeCount: number,
@@ -502,7 +502,7 @@ export class BatchStatisticType {
 }
 
 export class CardArt {
-	constructor(obj: {
+	constructor(obj?: {
 		cardBrand: string,
 		cardImageHeight: string,
 		cardImageUrl: string,
@@ -533,7 +533,7 @@ export class CardArt {
 }
 
 export class CcAuthenticationType {
-	constructor(obj: {
+	constructor(obj?: {
 		authenticationIndicator: string,
 		cardholderAuthenticationValue: string
 	})
@@ -549,7 +549,7 @@ export class CcAuthenticationType {
 }
 
 export class ContactDetailType {
-	constructor(obj: {
+	constructor(obj?: {
 		email: string,
 		firstName: string,
 		lastName: string
@@ -570,7 +570,7 @@ export class ContactDetailType {
 }
 
 export class CreateProfileResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		messages: MessagesType,
 		customerProfileId: string,
 		customerPaymentProfileIdList: Array<String>,
@@ -596,7 +596,7 @@ export class CreateProfileResponse {
 }
 
 export class CreditCardMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		cardNumber: string,
 		expirationDate: string,
 		cardType: string,
@@ -632,7 +632,7 @@ export class CreditCardMaskedType {
 }
 
 export class CreditCardSimpleType {
-	constructor(obj: {
+	constructor(obj?: {
 		cardNumber: string,
 		expirationDate: string
 	})
@@ -648,7 +648,7 @@ export class CreditCardSimpleType {
 }
 
 export class CreditCardTrackType {
-	constructor(obj: {
+	constructor(obj?: {
 		track1: string,
 		track2: string
 	})
@@ -664,7 +664,7 @@ export class CreditCardTrackType {
 }
 
 export class CustomerDataType {
-	constructor(obj: {
+	constructor(obj?: {
 		type: CustomerTypeEnum,
 		id: string,
 		email: string,
@@ -695,7 +695,7 @@ export class CustomerDataType {
 }
 
 export class CustomerPaymentProfileBaseType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerType: CustomerTypeEnum,
 		billTo: CustomerAddressType
 	})
@@ -711,7 +711,7 @@ export class CustomerPaymentProfileBaseType {
 }
 
 export class CustomerPaymentProfileListItemType {
-	constructor(obj: {
+	constructor(obj?: {
 		defaultPaymentProfile: boolean,
 		customerPaymentProfileId: number,
 		customerProfileId: number,
@@ -742,7 +742,7 @@ export class CustomerPaymentProfileListItemType {
 }
 
 export class CustomerPaymentProfileSorting {
-	constructor(obj: {
+	constructor(obj?: {
 		orderBy: CustomerPaymentProfileOrderFieldEnum,
 		orderDescending: boolean
 	})
@@ -758,7 +758,7 @@ export class CustomerPaymentProfileSorting {
 }
 
 export class CustomerProfileBaseType {
-	constructor(obj: {
+	constructor(obj?: {
 		merchantCustomerId: string,
 		description: string,
 		email: string
@@ -779,7 +779,7 @@ export class CustomerProfileBaseType {
 }
 
 export class CustomerProfileIdType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerAddressId: string
@@ -800,7 +800,7 @@ export class CustomerProfileIdType {
 }
 
 export class CustomerProfilePaymentType {
-	constructor(obj: {
+	constructor(obj?: {
 		createProfile: boolean,
 		customerProfileId: string,
 		paymentProfile: PaymentProfile,
@@ -826,7 +826,7 @@ export class CustomerProfilePaymentType {
 }
 
 export class CustomerProfileSummaryType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		description: string,
 		merchantCustomerId: string,
@@ -857,7 +857,7 @@ export class CustomerProfileSummaryType {
 }
 
 export class CustomerType {
-	constructor(obj: {
+	constructor(obj?: {
 		type: CustomerTypeEnum,
 		id: string,
 		email: string,
@@ -898,7 +898,7 @@ export class CustomerType {
 }
 
 export class DriversLicenseMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		number: string,
 		state: string,
 		dateOfBirth: string
@@ -919,7 +919,7 @@ export class DriversLicenseMaskedType {
 }
 
 export class DriversLicenseType {
-	constructor(obj: {
+	constructor(obj?: {
 		number: string,
 		state: string,
 		dateOfBirth: string
@@ -940,7 +940,7 @@ export class DriversLicenseType {
 }
 
 export class EmvTag {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		value: string,
 		formatted: string
@@ -961,7 +961,7 @@ export class EmvTag {
 }
 
 export class EncryptedTrackDataType {
-	constructor(obj: { FormOfPayment: KeyBlock })
+	constructor(obj?: { FormOfPayment: KeyBlock })
 
 	getFormOfPayment(): KeyBlock ;
 
@@ -970,7 +970,7 @@ export class EncryptedTrackDataType {
 }
 
 export class EnumCollection {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileSummaryType: CustomerProfileSummaryType,
 		paymentSimpleType: PaymentSimpleType,
 		accountTypeEnum: AccountTypeEnum,
@@ -1026,7 +1026,7 @@ export class EnumCollection {
 }
 
 export class ExtendedAmountType {
-	constructor(obj: {
+	constructor(obj?: {
 		amount: number,
 		name: string,
 		description: string
@@ -1047,7 +1047,7 @@ export class ExtendedAmountType {
 }
 
 export class FDSFilterType {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		action: string
 	})
@@ -1063,7 +1063,7 @@ export class FDSFilterType {
 }
 
 export class FingerPrintType {
-	constructor(obj: {
+	constructor(obj?: {
 		hashValue: string,
 		sequence: string,
 		timestamp: string,
@@ -1094,7 +1094,7 @@ export class FingerPrintType {
 }
 
 export class FraudInformationType {
-	constructor(obj: {
+	constructor(obj?: {
 		fraudFilterList: Array<string>,
 		fraudAction: string
 	})
@@ -1110,7 +1110,7 @@ export class FraudInformationType {
 }
 
 export class HeldTransactionRequestType {
-	constructor(obj: {
+	constructor(obj?: {
 		action: AfdsTransactionEnum,
 		refTransId: string
 	})
@@ -1126,7 +1126,7 @@ export class HeldTransactionRequestType {
 }
 
 export class ImpersonationAuthenticationType {
-	constructor(obj: {
+	constructor(obj?: {
 		partnerLoginId: string,
 		partnerTransactionKey: string
 	})
@@ -1142,7 +1142,7 @@ export class ImpersonationAuthenticationType {
 }
 
 export class IsAliveRequest {
-	constructor(obj: { refId: string })
+	constructor(obj?: { refId: string })
 
 	getRefId(): string ;
 
@@ -1151,7 +1151,7 @@ export class IsAliveRequest {
 }
 
 export class KeyBlock {
-	constructor(obj: { value: KeyValue })
+	constructor(obj?: { value: KeyValue })
 
 	getValue(): KeyValue ;
 
@@ -1160,7 +1160,7 @@ export class KeyBlock {
 }
 
 export class KeyManagementScheme {
-	constructor(obj: { dukpt: KeyManagementScheme.DUKPT })
+	constructor(obj?: { dukpt: KeyManagementScheme.DUKPT })
 
 	getDukpt(): KeyManagementScheme.DUKPT ;
 
@@ -1170,7 +1170,7 @@ export class KeyManagementScheme {
 
 export namespace KeyManagementScheme {
 	export class DUKPT {
-		constructor(obj: {
+		constructor(obj?: {
 			operation: OperationType,
 			Mode: KeyManagementScheme.DUKPT.Mode,
 			DeviceInfo: KeyManagementScheme.DUKPT.DeviceInfo,
@@ -1197,7 +1197,7 @@ export namespace KeyManagementScheme {
 
 	export namespace DUKPT {
 		export class DeviceInfo {
-			constructor(obj: { description: string })
+			constructor(obj?: { description: string })
 
 			getDescription(): string ;
 
@@ -1206,7 +1206,7 @@ export namespace KeyManagementScheme {
 		}
 
 		export class EncryptedData {
-			constructor(obj: { value: string })
+			constructor(obj?: { value: string })
 
 			getValue(): string ;
 
@@ -1215,7 +1215,7 @@ export namespace KeyManagementScheme {
 		}
 
 		export class Mode {
-			constructor(obj: {
+			constructor(obj?: {
 				pin: string,
 				Data: string
 			})
@@ -1233,7 +1233,7 @@ export namespace KeyManagementScheme {
 }
 
 export class KeyValue {
-	constructor(obj: {
+	constructor(obj?: {
 		encoding: EncodingType,
 		encryptionAlgorithm: EncryptionAlgorithmType,
 		scheme: KeyManagementScheme
@@ -1254,7 +1254,7 @@ export class KeyValue {
 }
 
 export class LineItemType {
-	constructor(obj: {
+	constructor(obj?: {
 		itemId: string,
 		name: string,
 		description: string,
@@ -1390,7 +1390,7 @@ export class LineItemType {
 }
 
 export class ListOfAUDetailsType {
-	constructor(obj: { auUpdateOrAuDelete: Array<AuDetailsType> })
+	constructor(obj?: { auUpdateOrAuDelete: Array<AuDetailsType> })
 
 	getAuUpdateOrAuDelete(): Array<AuDetailsType> ;
 
@@ -1399,7 +1399,7 @@ export class ListOfAUDetailsType {
 }
 
 export class MerchantAuthenticationType {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		transactionKey: string,
 		sessionToken: string,
@@ -1450,7 +1450,7 @@ export class MerchantAuthenticationType {
 }
 
 export class MerchantContactType {
-	constructor(obj: {
+	constructor(obj?: {
 		merchantName: string,
 		merchantAddress: string,
 		merchantCity: string,
@@ -1486,7 +1486,7 @@ export class MerchantContactType {
 }
 
 export class MessagesType {
-	constructor(obj: {
+	constructor(obj?: {
 		resultCode: MessageTypeEnum,
 		message: Array<MessagesType.Message>
 	})
@@ -1503,7 +1503,7 @@ export class MessagesType {
 
 export namespace MessagesType {
 	export class Message {
-		constructor(obj: {
+		constructor(obj?: {
 			code: string,
 			text: string
 		})
@@ -1520,7 +1520,7 @@ export namespace MessagesType {
 }
 
 export class MobileDeviceType {
-	constructor(obj: {
+	constructor(obj?: {
 		mobileDeviceId: string,
 		description: string,
 		phoneNumber: string,
@@ -1551,7 +1551,7 @@ export class MobileDeviceType {
 }
 
 export class NameAndAddressType {
-	constructor(obj: {
+	constructor(obj?: {
 		firstName: string,
 		lastName: string,
 		company: string,
@@ -1597,7 +1597,7 @@ export class NameAndAddressType {
 }
 
 export class OpaqueDataType {
-	constructor(obj: {
+	constructor(obj?: {
 		dataDescriptor: string,
 		dataValue: string,
 		dataKey: string,
@@ -1623,7 +1623,7 @@ export class OpaqueDataType {
 }
 
 export class OrderType {
-	constructor(obj: {
+	constructor(obj?: {
 		invoiceNumber: string,
 		description: string,
 		discountAmount: number,
@@ -1719,7 +1719,7 @@ export class OrderType {
 }
 
 export class OtherTaxType {
-	constructor(obj: {
+	constructor(obj?: {
 		nationalTaxAmount: number,
 		localTaxAmount: number,
 		alternateTaxAmount: number,
@@ -1755,7 +1755,7 @@ export class OtherTaxType {
 }
 
 export class Paging {
-	constructor(obj: {
+	constructor(obj?: {
 		limit: number,
 		offset: number
 	})
@@ -1771,7 +1771,7 @@ export class Paging {
 }
 
 export class PayPalType {
-	constructor(obj: {
+	constructor(obj?: {
 		successUrl: string,
 		cancelUrl: string,
 		paypalLc: string,
@@ -1807,7 +1807,7 @@ export class PayPalType {
 }
 
 export class PaymentDetails {
-	constructor(obj: {
+	constructor(obj?: {
 		currency: string,
 		promoCode: string,
 		misc: string,
@@ -1863,7 +1863,7 @@ export class PaymentDetails {
 }
 
 export class PaymentEmvType {
-	constructor(obj: {
+	constructor(obj?: {
 		emvData: object,
 		emvDescriptor: object,
 		emvVersion: object
@@ -1884,7 +1884,7 @@ export class PaymentEmvType {
 }
 
 export class PaymentMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		creditCard: CreditCardMaskedType,
 		bankAccount: BankAccountMaskedType,
 		tokenInformation: TokenMaskedType
@@ -1905,7 +1905,7 @@ export class PaymentMaskedType {
 }
 
 export class PaymentProfile {
-	constructor(obj: {
+	constructor(obj?: {
 		paymentProfileId: string,
 		cardCode: string
 	})
@@ -1921,7 +1921,7 @@ export class PaymentProfile {
 }
 
 export class PaymentScheduleType {
-	constructor(obj: {
+	constructor(obj?: {
 		interval: PaymentScheduleType.Interval,
 		startDate: Date,
 		totalOccurrences: number,
@@ -1948,7 +1948,7 @@ export class PaymentScheduleType {
 
 export namespace PaymentScheduleType {
 	export class Interval {
-		constructor(obj: {
+		constructor(obj?: {
 			length: number,
 			unit: ARBSubscriptionUnitEnum
 		})
@@ -1965,7 +1965,7 @@ export namespace PaymentScheduleType {
 }
 
 export class PaymentSimpleType {
-	constructor(obj: {
+	constructor(obj?: {
 		creditCard: CreditCardSimpleType,
 		bankAccount: BankAccountType
 	})
@@ -1981,7 +1981,7 @@ export class PaymentSimpleType {
 }
 
 export class PaymentType {
-	constructor(obj: {
+	constructor(obj?: {
 		creditCard: CreditCardType,
 		bankAccount: BankAccountType,
 		trackData: CreditCardTrackType,
@@ -2027,7 +2027,7 @@ export class PaymentType {
 }
 
 export class PermissionType {
-	constructor(obj: { permissionName: string })
+	constructor(obj?: { permissionName: string })
 
 	getPermissionName(): string ;
 
@@ -2036,7 +2036,7 @@ export class PermissionType {
 }
 
 export class ProcessingOptions {
-	constructor(obj: {
+	constructor(obj?: {
 		isFirstRecurringPayment: boolean,
 		isFirstSubsequentAuth: boolean,
 		isSubsequentAuth: boolean,
@@ -2062,7 +2062,7 @@ export class ProcessingOptions {
 }
 
 export class ProcessorType {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		id: number,
 		cardTypes: Array<String>
@@ -2083,7 +2083,7 @@ export class ProcessorType {
 }
 
 export class ProfileTransAmountType {
-	constructor(obj: {
+	constructor(obj?: {
 		amount: number,
 		tax: ExtendedAmountType,
 		shipping: ExtendedAmountType,
@@ -2114,7 +2114,7 @@ export class ProfileTransAmountType {
 }
 
 export class ProfileTransVoidType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerShippingAddressId: string,
@@ -2140,7 +2140,7 @@ export class ProfileTransVoidType {
 }
 
 export class ProfileTransactionType {
-	constructor(obj: {
+	constructor(obj?: {
 		profileTransAuthCapture: ProfileTransAuthCaptureType,
 		profileTransAuthOnly: ProfileTransAuthOnlyType,
 		profileTransPriorAuthCapture: ProfileTransPriorAuthCaptureType,
@@ -2176,7 +2176,7 @@ export class ProfileTransactionType {
 }
 
 export class ReturnedItemType {
-	constructor(obj: {
+	constructor(obj?: {
 		id: string,
 		dateUTC: Date,
 		dateLocal: Date,
@@ -2207,7 +2207,7 @@ export class ReturnedItemType {
 }
 
 export class SecurePaymentContainerErrorType {
-	constructor(obj: {
+	constructor(obj?: {
 		code: string,
 		description: string
 	})
@@ -2223,7 +2223,7 @@ export class SecurePaymentContainerErrorType {
 }
 
 export class SettingType {
-	constructor(obj: {
+	constructor(obj?: {
 		settingName: string,
 		settingValue: string
 	})
@@ -2239,7 +2239,7 @@ export class SettingType {
 }
 
 export class SolutionType {
-	constructor(obj: {
+	constructor(obj?: {
 		id: string,
 		name: string,
 		vendorName: string
@@ -2260,7 +2260,7 @@ export class SolutionType {
 }
 
 export class SubMerchantType {
-	constructor(obj: {
+	constructor(obj?: {
 		identifier: string,
 		doingBusinessAs: string,
 		paymentServiceProviderName: string,
@@ -2321,7 +2321,7 @@ export class SubMerchantType {
 }
 
 export class SubscriptionDetail {
-	constructor(obj: {
+	constructor(obj?: {
 		id: number,
 		name: string,
 		status: ARBSubscriptionStatusEnum,
@@ -2407,7 +2407,7 @@ export class SubscriptionDetail {
 }
 
 export class SubscriptionIdList {
-	constructor(obj: { subscriptionId: Array<String> })
+	constructor(obj?: { subscriptionId: Array<String> })
 
 	getSubscriptionId(): Array<String> ;
 
@@ -2416,7 +2416,7 @@ export class SubscriptionIdList {
 }
 
 export class SubscriptionPaymentType {
-	constructor(obj: {
+	constructor(obj?: {
 		id: number,
 		payNum: number
 	})
@@ -2432,7 +2432,7 @@ export class SubscriptionPaymentType {
 }
 
 export class SubsequentAuthInformation {
-	constructor(obj: {
+	constructor(obj?: {
 		originalNetworkTransId: string,
 		reason: MerchantInitTransReasonEnum
 	})
@@ -2448,7 +2448,7 @@ export class SubsequentAuthInformation {
 }
 
 export class TokenMaskedType {
-	constructor(obj: {
+	constructor(obj?: {
 		tokenSource: string,
 		tokenNumber: string,
 		expirationDate: string,
@@ -2474,7 +2474,7 @@ export class TokenMaskedType {
 }
 
 export class TransRetailInfoType {
-	constructor(obj: {
+	constructor(obj?: {
 		marketType: string,
 		deviceType: string,
 		customerSignature: string,
@@ -2500,7 +2500,7 @@ export class TransRetailInfoType {
 }
 
 export class TransactionDetailsType {
-	constructor(obj: {
+	constructor(obj?: {
 		transId: string,
 		refTransId: string,
 		splitTenderId: string,
@@ -2747,7 +2747,7 @@ export class TransactionDetailsType {
 
 export namespace TransactionDetailsType {
 	export class EmvDetails {
-		constructor(obj: { tag: Array<TransactionDetailsType.EmvDetails.Tag> })
+		constructor(obj?: { tag: Array<TransactionDetailsType.EmvDetails.Tag> })
 
 		getTag(): Array<TransactionDetailsType.EmvDetails.Tag> ;
 
@@ -2757,7 +2757,7 @@ export namespace TransactionDetailsType {
 
 	export namespace EmvDetails {
 		export class Tag {
-			constructor(obj: { tagId: string })
+			constructor(obj?: { tagId: string })
 
 			protected data: string;
 
@@ -2775,7 +2775,7 @@ export namespace TransactionDetailsType {
 }
 
 export class TransactionListSorting {
-	constructor(obj: {
+	constructor(obj?: {
 		orderBy: TransactionListOrderFieldEnum,
 		orderDescending: boolean
 	})
@@ -2791,7 +2791,7 @@ export class TransactionListSorting {
 }
 
 export class TransactionRequestType {
-	constructor(obj: {
+	constructor(obj?: {
 		transactionType: string,
 		amount: number,
 		currencyCode: string,
@@ -2973,7 +2973,7 @@ export class TransactionRequestType {
 
 export namespace TransactionRequestType {
 	export class UserFields {
-		constructor(obj: { userField: Array<UserField> })
+		constructor(obj?: { userField: Array<UserField> })
 
 		getUserField(): Array<UserField> ;
 
@@ -2983,7 +2983,7 @@ export namespace TransactionRequestType {
 }
 
 export class TransactionResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		responseCode: string,
 		rawResponseCode: string,
 		authCode: string,
@@ -3115,7 +3115,7 @@ export class TransactionResponse {
 
 export namespace TransactionResponse {
 	export class SplitTenderPayments {
-		constructor(obj: { splitTenderPayment: Array<TransactionResponse.SplitTenderPayments.SplitTenderPayment> })
+		constructor(obj?: { splitTenderPayment: Array<TransactionResponse.SplitTenderPayments.SplitTenderPayment> })
 
 		getSplitTenderPayment(): Array<TransactionResponse.SplitTenderPayments.SplitTenderPayment> ;
 
@@ -3124,7 +3124,7 @@ export namespace TransactionResponse {
 	}
 
 	export class EmvResponse {
-		constructor(obj: {
+		constructor(obj?: {
 			tlvData: string,
 			tags: TransactionResponse.EmvResponse.Tags
 		})
@@ -3140,7 +3140,7 @@ export namespace TransactionResponse {
 	}
 
 	export class Messages {
-		constructor(obj: { message: Array<TransactionResponse.Messages.Message> })
+		constructor(obj?: { message: Array<TransactionResponse.Messages.Message> })
 
 		getMessage(): Array<TransactionResponse.Messages.Message> ;
 
@@ -3149,7 +3149,7 @@ export namespace TransactionResponse {
 	}
 
 	export class Errors {
-		constructor(obj: { error: Array<TransactionResponse.Errors.Error> })
+		constructor(obj?: { error: Array<TransactionResponse.Errors.Error> })
 
 		getError(): Array<TransactionResponse.Errors.Error> ;
 
@@ -3158,7 +3158,7 @@ export namespace TransactionResponse {
 	}
 
 	export class PrePaidCard {
-		constructor(obj: {
+		constructor(obj?: {
 			requestedAmount: string,
 			approvedAmount: string,
 			balanceOnCard: string
@@ -3179,7 +3179,7 @@ export namespace TransactionResponse {
 	}
 
 	export class SecureAcceptance {
-		constructor(obj: {
+		constructor(obj?: {
 			secureAcceptanceUrl: string,
 			PayerID: string,
 			PayerEmail: string
@@ -3200,7 +3200,7 @@ export namespace TransactionResponse {
 	}
 
 	export class UserFields {
-		constructor(obj: { userField: Array<UserField> })
+		constructor(obj?: { userField: Array<UserField> })
 
 		getUserField(): Array<UserField> ;
 
@@ -3210,7 +3210,7 @@ export namespace TransactionResponse {
 
 	export namespace Messages {
 		export class Message {
-			constructor(obj: {
+			constructor(obj?: {
 				code: string,
 				description: string
 			})
@@ -3227,7 +3227,7 @@ export namespace TransactionResponse {
 	}
 	export namespace EmvResponse {
 		export class Tags {
-			constructor(obj: { tag: Array<EmvTag> })
+			constructor(obj?: { tag: Array<EmvTag> })
 
 			getTag(): Array<EmvTag> ;
 
@@ -3237,7 +3237,7 @@ export namespace TransactionResponse {
 	}
 	export namespace SplitTenderPayments {
 		export class SplitTenderPayment {
-			constructor(obj: {
+			constructor(obj?: {
 				transId: string,
 				responseCode: string,
 				responseToCustomer: string,
@@ -3289,7 +3289,7 @@ export namespace TransactionResponse {
 	}
 	export namespace Errors {
 		export class Error {
-			constructor(obj: {
+			constructor(obj?: {
 				errorCode: string,
 				errorText: string
 			})
@@ -3307,7 +3307,7 @@ export namespace TransactionResponse {
 }
 
 export class TransactionSummaryType {
-	constructor(obj: {
+	constructor(obj?: {
 		transId: string,
 		submitTimeUTC: Date,
 		submitTimeLocal: Date,
@@ -3398,7 +3398,7 @@ export class TransactionSummaryType {
 }
 
 export class UserField {
-	constructor(obj: {
+	constructor(obj?: {
 		name: string,
 		value: string
 	})
@@ -3414,7 +3414,7 @@ export class UserField {
 }
 
 export class WebCheckOutDataType {
-	constructor(obj: {
+	constructor(obj?: {
 		type: WebCheckOutTypeEnum,
 		id: string,
 		token: WebCheckOutDataTypeToken,
@@ -3440,7 +3440,7 @@ export class WebCheckOutDataType {
 }
 
 export class WebCheckOutDataTypeToken {
-	constructor(obj: {
+	constructor(obj?: {
 		cardNumber: string,
 		expirationDate: string,
 		cardCode: string,
@@ -3471,7 +3471,7 @@ export class WebCheckOutDataTypeToken {
 }
 
 export class ARBCancelSubscriptionRequest extends ANetApiRequest {
-	constructor(obj: { subscriptionId: string })
+	constructor(obj?: { subscriptionId: string })
 
 	getSubscriptionId(): string ;
 
@@ -3483,7 +3483,7 @@ export class ARBCancelSubscriptionResponse extends ANetApiResponse {
 }
 
 export class ARBCreateSubscriptionRequest extends ANetApiRequest {
-	constructor(obj: { subscription: ARBSubscriptionType })
+	constructor(obj?: { subscription: ARBSubscriptionType })
 
 	getSubscription(): ARBSubscriptionType ;
 
@@ -3492,7 +3492,7 @@ export class ARBCreateSubscriptionRequest extends ANetApiRequest {
 }
 
 export class ARBCreateSubscriptionResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		subscriptionId: string,
 		profile: CustomerProfileIdType
 	})
@@ -3508,7 +3508,7 @@ export class ARBCreateSubscriptionResponse extends ANetApiResponse {
 }
 
 export class ARBGetSubscriptionListRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		searchType: ARBGetSubscriptionListSearchTypeEnum,
 		sorting: ARBGetSubscriptionListSorting,
 		paging: Paging
@@ -3529,7 +3529,7 @@ export class ARBGetSubscriptionListRequest extends ANetApiRequest {
 }
 
 export class ARBGetSubscriptionListResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		totalNumInResultSet: number,
 		subscriptionDetails: Array<SubscriptionDetail>
 	})
@@ -3545,7 +3545,7 @@ export class ARBGetSubscriptionListResponse extends ANetApiResponse {
 }
 
 export class ARBGetSubscriptionRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		subscriptionId: string,
 		includeTransactions: boolean
 	})
@@ -3561,7 +3561,7 @@ export class ARBGetSubscriptionRequest extends ANetApiRequest {
 }
 
 export class ARBGetSubscriptionResponse extends ANetApiResponse {
-	constructor(obj: { subscription: ARBSubscriptionMaskedType })
+	constructor(obj?: { subscription: ARBSubscriptionMaskedType })
 
 	getSubscription(): ARBSubscriptionMaskedType ;
 
@@ -3570,7 +3570,7 @@ export class ARBGetSubscriptionResponse extends ANetApiResponse {
 }
 
 export class ARBGetSubscriptionStatusRequest extends ANetApiRequest {
-	constructor(obj: { subscriptionId: string })
+	constructor(obj?: { subscriptionId: string })
 
 	getSubscriptionId(): string ;
 
@@ -3579,7 +3579,7 @@ export class ARBGetSubscriptionStatusRequest extends ANetApiRequest {
 }
 
 export class ARBGetSubscriptionStatusResponse extends ANetApiResponse {
-	constructor(obj: { status: ARBSubscriptionStatusEnum })
+	constructor(obj?: { status: ARBSubscriptionStatusEnum })
 
 	getStatus(): ARBSubscriptionStatusEnum ;
 
@@ -3588,7 +3588,7 @@ export class ARBGetSubscriptionStatusResponse extends ANetApiResponse {
 }
 
 export class ARBUpdateSubscriptionRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		subscriptionId: string,
 		subscription: ARBSubscriptionType
 	})
@@ -3604,7 +3604,7 @@ export class ARBUpdateSubscriptionRequest extends ANetApiRequest {
 }
 
 export class ARBUpdateSubscriptionResponse extends ANetApiResponse {
-	constructor(obj: { profile: CustomerProfileIdType })
+	constructor(obj?: { profile: CustomerProfileIdType })
 
 	getProfile(): CustomerProfileIdType ;
 
@@ -3613,7 +3613,7 @@ export class ARBUpdateSubscriptionResponse extends ANetApiResponse {
 }
 
 export class AuDeleteType extends AuDetailsType {
-	constructor(obj: { creditCard: CreditCardMaskedType })
+	constructor(obj?: { creditCard: CreditCardMaskedType })
 
 	getCreditCard(): CreditCardMaskedType ;
 
@@ -3622,7 +3622,7 @@ export class AuDeleteType extends AuDetailsType {
 }
 
 export class AuUpdateType extends AuDetailsType {
-	constructor(obj: {
+	constructor(obj?: {
 		newCreditCard: CreditCardMaskedType,
 		oldCreditCard: CreditCardMaskedType
 	})
@@ -3644,7 +3644,7 @@ export class AuthenticateTestResponse extends ANetApiResponse {
 }
 
 export class CreateCustomerPaymentProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		paymentProfile: CustomerPaymentProfileType,
 		validationMode: ValidationModeEnum
@@ -3665,7 +3665,7 @@ export class CreateCustomerPaymentProfileRequest extends ANetApiRequest {
 }
 
 export class CreateCustomerPaymentProfileResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		validationDirectResponse: string
@@ -3686,7 +3686,7 @@ export class CreateCustomerPaymentProfileResponse extends ANetApiResponse {
 }
 
 export class CreateCustomerProfileFromTransactionRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		transId: string,
 		customer: CustomerProfileBaseType,
 		customerProfileId: string,
@@ -3722,7 +3722,7 @@ export class CreateCustomerProfileFromTransactionRequest extends ANetApiRequest 
 }
 
 export class CreateCustomerProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		profile: CustomerProfileType,
 		validationMode: ValidationModeEnum
 	})
@@ -3738,7 +3738,7 @@ export class CreateCustomerProfileRequest extends ANetApiRequest {
 }
 
 export class CreateCustomerProfileResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileIdList: Array<string>,
 		customerShippingAddressIdList: Array<string>,
@@ -3764,7 +3764,7 @@ export class CreateCustomerProfileResponse extends ANetApiResponse {
 }
 
 export class CreateCustomerProfileTransactionRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		transaction: ProfileTransactionType,
 		extraOptions: string
 	})
@@ -3780,7 +3780,7 @@ export class CreateCustomerProfileTransactionRequest extends ANetApiRequest {
 }
 
 export class CreateCustomerProfileTransactionResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		transactionResponse: TransactionResponse,
 		directResponse: string
 	})
@@ -3796,7 +3796,7 @@ export class CreateCustomerProfileTransactionResponse extends ANetApiResponse {
 }
 
 export class CreateCustomerShippingAddressRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		address: CustomerAddressType,
 		defaultShippingAddress: boolean
@@ -3817,7 +3817,7 @@ export class CreateCustomerShippingAddressRequest extends ANetApiRequest {
 }
 
 export class CreateCustomerShippingAddressResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerAddressId: string
 	})
@@ -3833,7 +3833,7 @@ export class CreateCustomerShippingAddressResponse extends ANetApiResponse {
 }
 
 export class CreateTransactionRequest extends ANetApiRequest {
-	constructor(obj: { transactionRequest: TransactionRequestType })
+	constructor(obj?: { transactionRequest: TransactionRequestType })
 
 	getTransactionRequest(): TransactionRequestType ;
 
@@ -3843,7 +3843,7 @@ export class CreateTransactionRequest extends ANetApiRequest {
 
 
 export class CreateTransactionResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		transactionResponse: TransactionResponse,
 		profileResponse: CreateProfileResponse
 	})
@@ -3859,7 +3859,7 @@ export class CreateTransactionResponse extends ANetApiResponse {
 
 
 export class CreditCardType extends CreditCardSimpleType {
-	constructor(obj: {
+	constructor(obj?: {
 		cardCode: string,
 		isPaymentToken: boolean,
 		cryptogram: string,
@@ -3895,7 +3895,7 @@ export class CreditCardType extends CreditCardSimpleType {
 }
 
 export class CustomerAddressType extends NameAndAddressType {
-	constructor(obj: {
+	constructor(obj?: {
 		phoneNumber: string,
 		faxNumber: string,
 		email: string
@@ -3916,7 +3916,7 @@ export class CustomerAddressType extends NameAndAddressType {
 }
 
 export class CustomerPaymentProfileMaskedType extends CustomerPaymentProfileBaseType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		defaultPaymentProfile: boolean,
@@ -3957,7 +3957,7 @@ export class CustomerPaymentProfileMaskedType extends CustomerPaymentProfileBase
 }
 
 export class CustomerPaymentProfileType extends CustomerPaymentProfileBaseType {
-	constructor(obj: {
+	constructor(obj?: {
 		payment: PaymentType,
 		driversLicense: DriversLicenseType,
 		taxId: string,
@@ -3983,7 +3983,7 @@ export class CustomerPaymentProfileType extends CustomerPaymentProfileBaseType {
 }
 
 export class CustomerProfileExType extends CustomerProfileBaseType {
-	constructor(obj: { customerProfileId: string })
+	constructor(obj?: { customerProfileId: string })
 
 	getCustomerProfileId(): string ;
 
@@ -3992,7 +3992,7 @@ export class CustomerProfileExType extends CustomerProfileBaseType {
 }
 
 export class CustomerProfileType extends CustomerProfileBaseType {
-	constructor(obj: {
+	constructor(obj?: {
 		paymentProfiles: Array<CustomerPaymentProfileType>,
 		shipToList: Array<CustomerAddressType>,
 		profileType: CustomerProfileTypeEnum
@@ -4013,7 +4013,7 @@ export class CustomerProfileType extends CustomerProfileBaseType {
 }
 
 export class DecryptPaymentDataRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		opaqueData: OpaqueDataType,
 		callId: string
 	})
@@ -4029,7 +4029,7 @@ export class DecryptPaymentDataRequest extends ANetApiRequest {
 }
 
 export class DecryptPaymentDataResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		shippingInfo: CustomerAddressType,
 		billingInfo: CustomerAddressType,
 		cardInfo: CreditCardMaskedType,
@@ -4055,7 +4055,7 @@ export class DecryptPaymentDataResponse extends ANetApiResponse {
 }
 
 export class DeleteCustomerPaymentProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string
 	})
@@ -4074,7 +4074,7 @@ export class DeleteCustomerPaymentProfileResponse extends ANetApiResponse {
 }
 
 export class DeleteCustomerProfileRequest extends ANetApiRequest {
-	constructor(obj: { customerProfileId: string })
+	constructor(obj?: { customerProfileId: string })
 
 	getCustomerProfileId(): string ;
 
@@ -4086,7 +4086,7 @@ export class DeleteCustomerProfileResponse extends ANetApiResponse {
 }
 
 export class DeleteCustomerShippingAddressRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerAddressId: string
 	})
@@ -4105,7 +4105,7 @@ export class DeleteCustomerShippingAddressResponse extends ANetApiResponse {
 }
 
 export class EmailSettingsType extends Array<SettingType> {
-	constructor(obj: { version: BigInteger })
+	constructor(obj?: { version: BigInteger })
 
 	getVersion(): BigInteger ;
 
@@ -4114,7 +4114,7 @@ export class EmailSettingsType extends Array<SettingType> {
 }
 
 export class GetAUJobDetailsRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		month: string,
 		modifiedTypeFilter: AUJobTypeEnum,
 		paging: Paging
@@ -4135,7 +4135,7 @@ export class GetAUJobDetailsRequest extends ANetApiRequest {
 }
 
 export class GetAUJobDetailsResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		totalNumInResultSet: number,
 		auDetails: ListOfAUDetailsType
 	})
@@ -4151,7 +4151,7 @@ export class GetAUJobDetailsResponse extends ANetApiResponse {
 }
 
 export class GetAUJobSummaryRequest extends ANetApiRequest {
-	constructor(obj: { month: string })
+	constructor(obj?: { month: string })
 
 	getMonth(): string ;
 
@@ -4160,7 +4160,7 @@ export class GetAUJobSummaryRequest extends ANetApiRequest {
 }
 
 export class GetAUJobSummaryResponse extends ANetApiResponse {
-	constructor(obj: { auSummary: Array<AuResponseType> })
+	constructor(obj?: { auSummary: Array<AuResponseType> })
 
 	getAuSummary(): Array<AuResponseType> ;
 
@@ -4169,7 +4169,7 @@ export class GetAUJobSummaryResponse extends ANetApiResponse {
 }
 
 export class GetBatchStatisticsRequest extends ANetApiRequest {
-	constructor(obj: { batchId: string })
+	constructor(obj?: { batchId: string })
 
 	getBatchId(): string ;
 
@@ -4178,7 +4178,7 @@ export class GetBatchStatisticsRequest extends ANetApiRequest {
 }
 
 export class GetBatchStatisticsResponse extends ANetApiResponse {
-	constructor(obj: { batch: BatchDetailsType })
+	constructor(obj?: { batch: BatchDetailsType })
 
 	getBatch(): BatchDetailsType ;
 
@@ -4187,7 +4187,7 @@ export class GetBatchStatisticsResponse extends ANetApiResponse {
 }
 
 export class GetCustomerPaymentProfileListRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		searchType: CustomerPaymentProfileSearchTypeEnum,
 		month: string,
 		sorting: CustomerPaymentProfileSorting,
@@ -4213,7 +4213,7 @@ export class GetCustomerPaymentProfileListRequest extends ANetApiRequest {
 }
 
 export class GetCustomerPaymentProfileListResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		totalNumInResultSet: number,
 		paymentProfiles: Array<CustomerPaymentProfileListItemType>
 	})
@@ -4229,7 +4229,7 @@ export class GetCustomerPaymentProfileListResponse extends ANetApiResponse {
 }
 
 export class GetCustomerPaymentProfileNonceRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		connectedAccessToken: string,
 		customerProfileId: string,
 		customerPaymentProfileId: string
@@ -4250,7 +4250,7 @@ export class GetCustomerPaymentProfileNonceRequest extends ANetApiRequest {
 }
 
 export class GetCustomerPaymentProfileNonceResponse extends ANetApiResponse {
-	constructor(obj: { opaqueData: OpaqueDataType })
+	constructor(obj?: { opaqueData: OpaqueDataType })
 
 	getOpaqueData(): OpaqueDataType ;
 
@@ -4259,7 +4259,7 @@ export class GetCustomerPaymentProfileNonceResponse extends ANetApiResponse {
 }
 
 export class GetCustomerPaymentProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		unmaskExpirationDate: boolean,
@@ -4285,7 +4285,7 @@ export class GetCustomerPaymentProfileRequest extends ANetApiRequest {
 }
 
 export class GetCustomerPaymentProfileResponse extends ANetApiResponse {
-	constructor(obj: { paymentProfile: CustomerPaymentProfileMaskedType })
+	constructor(obj?: { paymentProfile: CustomerPaymentProfileMaskedType })
 
 	getPaymentProfile(): CustomerPaymentProfileMaskedType ;
 
@@ -4297,7 +4297,7 @@ export class GetCustomerProfileIdsRequest extends ANetApiRequest {
 }
 
 export class GetCustomerProfileIdsResponse extends ANetApiResponse {
-	constructor(obj: { ids: Array<string> })
+	constructor(obj?: { ids: Array<string> })
 
 	getIds(): Array<string> ;
 
@@ -4306,7 +4306,7 @@ export class GetCustomerProfileIdsResponse extends ANetApiResponse {
 }
 
 export class GetCustomerProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		merchantCustomerId: string,
 		email: string,
@@ -4337,7 +4337,7 @@ export class GetCustomerProfileRequest extends ANetApiRequest {
 }
 
 export class GetCustomerProfileResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		profile: CustomerProfileMaskedType,
 		subscriptionIds: SubscriptionIdList
 	})
@@ -4353,7 +4353,7 @@ export class GetCustomerProfileResponse extends ANetApiResponse {
 }
 
 export class GetCustomerShippingAddressRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerAddressId: string
 	})
@@ -4369,7 +4369,7 @@ export class GetCustomerShippingAddressRequest extends ANetApiRequest {
 }
 
 export class GetCustomerShippingAddressResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		defaultShippingAddress: boolean,
 		address: CustomerAddressExType,
 		subscriptionIds: SubscriptionIdList
@@ -4390,7 +4390,7 @@ export class GetCustomerShippingAddressResponse extends ANetApiResponse {
 }
 
 export class GetHostedPaymentPageRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		transactionRequest: TransactionRequestType,
 		hostedPaymentSettings: Array<SettingType>
 	})
@@ -4406,7 +4406,7 @@ export class GetHostedPaymentPageRequest extends ANetApiRequest {
 }
 
 export class GetHostedPaymentPageResponse extends ANetApiResponse {
-	constructor(obj: { token: string })
+	constructor(obj?: { token: string })
 
 	getToken(): string ;
 
@@ -4415,7 +4415,7 @@ export class GetHostedPaymentPageResponse extends ANetApiResponse {
 }
 
 export class GetHostedProfilePageRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		hostedProfileSettings: Array<SettingType>
 	})
@@ -4431,7 +4431,7 @@ export class GetHostedProfilePageRequest extends ANetApiRequest {
 }
 
 export class GetHostedProfilePageResponse extends ANetApiResponse {
-	constructor(obj: { token: string })
+	constructor(obj?: { token: string })
 
 	getToken(): string ;
 
@@ -4443,7 +4443,7 @@ export class GetMerchantDetailsRequest extends ANetApiRequest {
 }
 
 export class GetMerchantDetailsResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		isTestMode: boolean,
 		processors: Array<ProcessorType>,
 		merchantName: string,
@@ -4509,7 +4509,7 @@ export class GetMerchantDetailsResponse extends ANetApiResponse {
 }
 
 export class GetSettledBatchListRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		includeStatistics: boolean,
 		firstSettlementDate: Date,
 		lastSettlementDate: Date
@@ -4530,7 +4530,7 @@ export class GetSettledBatchListRequest extends ANetApiRequest {
 }
 
 export class GetSettledBatchListResponse extends ANetApiResponse {
-	constructor(obj: { batchList: Array<BatchDetailsType> })
+	constructor(obj?: { batchList: Array<BatchDetailsType> })
 
 	getBatchList(): Array<BatchDetailsType> ;
 
@@ -4539,7 +4539,7 @@ export class GetSettledBatchListResponse extends ANetApiResponse {
 }
 
 export class GetTransactionDetailsRequest extends ANetApiRequest {
-	constructor(obj: { transId: string })
+	constructor(obj?: { transId: string })
 
 	getTransId(): string ;
 
@@ -4548,7 +4548,7 @@ export class GetTransactionDetailsRequest extends ANetApiRequest {
 }
 
 export class GetTransactionDetailsResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		transaction: TransactionDetailsType,
 		clientId: string,
 		transrefId: string
@@ -4569,7 +4569,7 @@ export class GetTransactionDetailsResponse extends ANetApiResponse {
 }
 
 export class GetTransactionListForCustomerRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		sorting: TransactionListSorting,
@@ -4595,7 +4595,7 @@ export class GetTransactionListForCustomerRequest extends ANetApiRequest {
 }
 
 export class GetTransactionListRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		batchId: string,
 		sorting: TransactionListSorting,
 		paging: Paging
@@ -4616,7 +4616,7 @@ export class GetTransactionListRequest extends ANetApiRequest {
 }
 
 export class GetTransactionListResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		transactions: Array<TransactionSummaryType>,
 		totalNumInResultSet: number
 	})
@@ -4632,7 +4632,7 @@ export class GetTransactionListResponse extends ANetApiResponse {
 }
 
 export class GetUnsettledTransactionListRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		status: TransactionGroupStatusEnum,
 		sorting: TransactionListSorting,
 		paging: Paging
@@ -4653,7 +4653,7 @@ export class GetUnsettledTransactionListRequest extends ANetApiRequest {
 }
 
 export class GetUnsettledTransactionListResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		transactions: Array<TransactionSummaryType>,
 		totalNumInResultSet: number
 	})
@@ -4681,7 +4681,7 @@ export class MobileDeviceLoginRequest extends ANetApiRequest {
 }
 
 export class MobileDeviceLoginResponse extends ANetApiResponse {
-	constructor(obj: {
+	constructor(obj?: {
 		merchantContact: MerchantContactType,
 		userPermissions: Array<PermissionType>,
 		merchantAccount: TransRetailInfoType
@@ -4702,7 +4702,7 @@ export class MobileDeviceLoginResponse extends ANetApiResponse {
 }
 
 export class MobileDeviceRegistrationRequest extends ANetApiRequest {
-	constructor(obj: { mobileDevice: MobileDeviceType })
+	constructor(obj?: { mobileDevice: MobileDeviceType })
 
 	getMobileDevice(): MobileDeviceType ;
 
@@ -4714,7 +4714,7 @@ export class MobileDeviceRegistrationResponse extends ANetApiResponse {
 }
 
 export class OrderExType extends OrderType {
-	constructor(obj: { purchaseOrderNumber: string })
+	constructor(obj?: { purchaseOrderNumber: string })
 
 	getPurchaseOrderNumber(): string ;
 
@@ -4723,7 +4723,7 @@ export class OrderExType extends OrderType {
 }
 
 export class ProfileTransOrderType extends ProfileTransAmountType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerShippingAddressId: string,
@@ -4779,7 +4779,7 @@ export class ProfileTransOrderType extends ProfileTransAmountType {
 }
 
 export class ProfileTransPriorAuthCaptureType extends ProfileTransAmountType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerShippingAddressId: string,
@@ -4805,7 +4805,7 @@ export class ProfileTransPriorAuthCaptureType extends ProfileTransAmountType {
 }
 
 export class ProfileTransRefundType extends ProfileTransAmountType {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerShippingAddressId: string,
@@ -4851,7 +4851,7 @@ export class ProfileTransRefundType extends ProfileTransAmountType {
 }
 
 export class SecurePaymentContainerRequest extends ANetApiRequest {
-	constructor(obj: { data: WebCheckOutDataType })
+	constructor(obj?: { data: WebCheckOutDataType })
 
 	getData(): WebCheckOutDataType ;
 
@@ -4860,7 +4860,7 @@ export class SecurePaymentContainerRequest extends ANetApiRequest {
 }
 
 export class SecurePaymentContainerResponse extends ANetApiResponse {
-	constructor(obj: { opaqueData: OpaqueDataType })
+	constructor(obj?: { opaqueData: OpaqueDataType })
 
 	getOpaqueData(): OpaqueDataType ;
 
@@ -4869,7 +4869,7 @@ export class SecurePaymentContainerResponse extends ANetApiResponse {
 }
 
 export class SendCustomerTransactionReceiptRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		transId: string,
 		customerEmail: string,
 		emailSettings: EmailSettingsType
@@ -4893,7 +4893,7 @@ export class SendCustomerTransactionReceiptResponse extends ANetApiResponse {
 }
 
 export class UpdateCustomerPaymentProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		paymentProfile: CustomerPaymentProfileExType,
 		validationMode: ValidationModeEnum
@@ -4914,11 +4914,11 @@ export class UpdateCustomerPaymentProfileRequest extends ANetApiRequest {
 }
 
 export class UpdateCustomerPaymentProfileResponse extends ANetApiResponse {
-	constructor(obj: { validationDirectResponse: string })
+	constructor(obj?: { validationDirectResponse: string })
 }
 
 export class UpdateCustomerProfileRequest extends ANetApiRequest {
-	constructor(obj: { profile: CustomerProfileExType })
+	constructor(obj?: { profile: CustomerProfileExType })
 
 	getProfile(): CustomerProfileExType ;
 
@@ -4930,7 +4930,7 @@ export class UpdateCustomerProfileResponse extends ANetApiResponse {
 }
 
 export class UpdateCustomerShippingAddressRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		address: CustomerAddressExType,
 		defaultShippingAddress: boolean
@@ -4954,7 +4954,7 @@ export class UpdateCustomerShippingAddressResponse extends ANetApiResponse {
 }
 
 export class UpdateHeldTransactionRequest extends ANetApiRequest {
-	constructor(obj: { heldTransactionRequest: HeldTransactionRequestType })
+	constructor(obj?: { heldTransactionRequest: HeldTransactionRequestType })
 
 	getHeldTransactionRequest(): HeldTransactionRequestType ;
 
@@ -4963,7 +4963,7 @@ export class UpdateHeldTransactionRequest extends ANetApiRequest {
 }
 
 export class UpdateHeldTransactionResponse extends ANetApiResponse {
-	constructor(obj: { transactionResponse: TransactionResponse })
+	constructor(obj?: { transactionResponse: TransactionResponse })
 
 	getTransactionResponse(): TransactionResponse ;
 
@@ -4972,7 +4972,7 @@ export class UpdateHeldTransactionResponse extends ANetApiResponse {
 }
 
 export class UpdateMerchantDetailsRequest extends ANetApiRequest {
-	constructor(obj: { isTestMode: boolean })
+	constructor(obj?: { isTestMode: boolean })
 
 	isIsTestMode(): boolean ;
 
@@ -4984,7 +4984,7 @@ export class UpdateMerchantDetailsResponse extends ANetApiResponse {
 }
 
 export class UpdateSplitTenderGroupRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		splitTenderId: string,
 		splitTenderStatus: SplitTenderStatusEnum
 	})
@@ -5003,7 +5003,7 @@ export class UpdateSplitTenderGroupResponse extends ANetApiResponse {
 }
 
 export class ValidateCustomerPaymentProfileRequest extends ANetApiRequest {
-	constructor(obj: {
+	constructor(obj?: {
 		customerProfileId: string,
 		customerPaymentProfileId: string,
 		customerShippingAddressId: string,
@@ -5034,7 +5034,7 @@ export class ValidateCustomerPaymentProfileRequest extends ANetApiRequest {
 }
 
 export class ValidateCustomerPaymentProfileResponse extends ANetApiResponse {
-	constructor(obj: { directResponse: string })
+	constructor(obj?: { directResponse: string })
 
 	getDirectResponse(): string ;
 
@@ -5043,7 +5043,7 @@ export class ValidateCustomerPaymentProfileResponse extends ANetApiResponse {
 }
 
 export class CustomerAddressExType extends CustomerAddressType {
-	constructor(obj: { customerAddressId: string })
+	constructor(obj?: { customerAddressId: string })
 
 	getCustomerAddressId(): string ;
 
@@ -5052,7 +5052,7 @@ export class CustomerAddressExType extends CustomerAddressType {
 }
 
 export class CustomerPaymentProfileExType extends CustomerPaymentProfileType {
-	constructor(obj: { customerPaymentProfileId: string })
+	constructor(obj?: { customerPaymentProfileId: string })
 
 	getCustomerPaymentProfileId(): string ;
 
@@ -5061,7 +5061,7 @@ export class CustomerPaymentProfileExType extends CustomerPaymentProfileType {
 }
 
 export class CustomerProfileInfoExType extends CustomerProfileExType {
-	constructor(obj: { profileType: CustomerProfileTypeEnum })
+	constructor(obj?: { profileType: CustomerProfileTypeEnum })
 
 	getProfileType(): CustomerProfileTypeEnum ;
 
@@ -5070,7 +5070,7 @@ export class CustomerProfileInfoExType extends CustomerProfileExType {
 }
 
 export class CustomerProfileMaskedType extends CustomerProfileExType {
-	constructor(obj: {
+	constructor(obj?: {
 		paymentProfiles: Array<CustomerPaymentProfileMaskedType>,
 		shipToList: Array<CustomerAddressExType>,
 		profileType: CustomerProfileTypeEnum
@@ -5097,7 +5097,7 @@ export class ProfileTransAuthOnlyType extends ProfileTransOrderType {
 }
 
 export class ProfileTransCaptureOnlyType extends ProfileTransOrderType {
-	constructor(obj: { approvalCode: string })
+	constructor(obj?: { approvalCode: string })
 
 	getApprovalCode(): string ;
 
@@ -5106,7 +5106,7 @@ export class ProfileTransCaptureOnlyType extends ProfileTransOrderType {
 }
 
 export class SubscriptionCustomerProfileType extends CustomerProfileExType {
-	constructor(obj: {
+	constructor(obj?: {
 		paymentProfile: CustomerPaymentProfileMaskedType,
 		shippingProfile: CustomerAddressExType
 	})
