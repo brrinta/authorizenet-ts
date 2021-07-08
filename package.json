@@ -1,6 +1,6 @@
 {
     "name": "@brrinta/authorizenet-ts",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Type definition of authorizenet node-sdk",
     "main": "src/index.d.ts",
     "scripts": {
